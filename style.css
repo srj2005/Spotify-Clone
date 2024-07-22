@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+*{
+    padding:0;
+    border:0;
+    margin: 0;
+}
+body{
+    background-color: antiquewhite;
+}
+navbar{
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    background-color: black;
+    color: antiquewhite;
+    
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  a:hover{
+    color: green;
+  }
+navbar ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: black;
+    color: antiquewhite;
+    height:55px;
+
+}
+navbar ul li{
+    color: antiquewhite;
+    padding:0 12px 0 12px;
+}
+navbar ul li:hover{
+    cursor:pointer;
+}
+.brand img{
+    width:45px;
+    padding:0 8px 0 0;
+}
+.brand{
+    font-family: "Lato", sans-serif;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height:75vh;
+    font-family: "Varela Round", sans-serif;
+    display: flex;
+    background-color: black;
+    color: white;
+    margin:23px auto;
+    width:70%;
+    border-radius:0.6rem;
+    padding: 30px;
+    background-image: url('bg2.webp');
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+.bottom{
+    position:sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100px;
+    width: 100vw;
+    background-color: black;
+    color: antiquewhite;
+    bottom:0;
+}
+.icons{
+    margin-top:12px;
+    background-color: black;
+}
+.icons:hover{
+    cursor: pointer;
+}
+#progressBar{
+min-width:80vw;
+}
+.songItem img{
+    height:90%;
+    width:60px;
+   margin:0 23px 0 23px;
+   border-radius:50%;
+}
+.songItemContainer{
+    margin-top: 70px;
+}
+#progressBar:hover{
+    cursor:pointer;
+}
+.hide{
+    display:none;
+}
+.songItem{
+height: 50px;
+width:450px;
+margin:20px;
+background-color: black;
+color:white;
+display:flex;
+align-items: center;
+justify-content: space-between;
+border-radius:30px;
+}
+.spanListPlay i:hover{
+cursor:pointer;
+}
+.spanListPlay i{
+    margin:0 23px;
+}
+.spanListPlay{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.timeStamp{
+    margin:0 23px;
+}
+.songInfo{
+    position:absolute;
+    left: 10vw;
+    font-family:  "Varela Round", sans-serif;
+}
+.songInfo img{
+opacity:0;
+transition: opacity 0.5s ease-in;
+}
